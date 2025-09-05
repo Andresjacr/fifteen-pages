@@ -1,0 +1,22 @@
+.title{
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+/* --- Estilos para el área de texto dentro de cada diseño --- */
+.design-text-area {
+    padding: 15px;
+}
+
+.design-text-area h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #2c3e50;
+}
+
+.design-text-area p {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}

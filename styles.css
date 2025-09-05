@@ -1,0 +1,19 @@
+/* styles.css */
+
+.contendor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor img{
+    width: 7.5vw;
+    height: 7.5vw;
+    border: 1px solid black;
+    margin: 15px;
+    cursor: pointer;
+}
+
+img:hover{
+    border: 1px solid rgb(225, 0, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}

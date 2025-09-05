@@ -1,0 +1,45 @@
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+h1{
+    font-size: 3.3vw;
+}
+p{
+    font-size: 1vw;
+    margin-top: -2vw;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: .5vw;
+}
+
+.images img{
+    width: 20vw;
+    height: 18vw;
+}
+
+button{
+    all: unset;
+    width: 7vw;
+    height: 2vw;
+    background: black;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
