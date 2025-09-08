@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Georgia", serif;
+    background: #fff;
+    color: #111;
+  }
+  
+  /* --- Hero --- */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-text {
+    max-width: 500px;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-text p {
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .hero-text button {
+    background: #111;
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .adorno {
+    width: 120px;
+    height: auto;
+  }
+  
+  /* --- Galería inferior --- */
+  .gallery-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    align-items: center;
+  }
+  
+  .side-text {
+    font-size: 1rem;
+    line-height: 2;
+    color: #333;
+  }
+  
+  .side-text .line {
+    width: 60%;
+    height: 3px;
+    background: black;
+    margin-top: 1rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  

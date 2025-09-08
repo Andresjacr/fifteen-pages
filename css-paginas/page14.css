@@ -1,0 +1,177 @@
+:root {
+    --bg-color: #f5f5f5;
+    --main-text-color: #2c2c2c;
+    --secondary-text-color: #666;
+    --button-bg: #2c2c2c;
+    --stats-bg: #2c2c2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--main-text-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+/* --- Estilos del Contenido de la Izquierda --- */
+.content-wrapper {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+.text-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: var(--secondary-text-color);
+}
+
+.text-section button {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-section button:hover {
+    background: #404040;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(44, 44, 44, 0.2);
+}
+
+.stats-section {
+    display: flex;
+    gap: 30px;
+    background: var(--stats-bg);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.stat-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+/* --- Estilos de la Sección de la Derecha (Gráficos y Teléfono) --- */
+.graphic-section {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin-left: 50px;
+}
+
+.phone-container {
+    position: absolute;
+    z-index: 10;
+    right: 50px;
+    top: 50px;
+    transform: rotate(15deg);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.phone {
+    width: 250px;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.background-elements {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.background-elements .large-star {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #FFD700;
+    top: 0;
+    right: 150px;
+    transform: rotate(25deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.background-elements .small-star {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: white;
+    bottom: 0;
+    right: 50px;
+    transform: rotate(30deg);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.background-elements .heart-shape {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #FFD700;
+    border-radius: 50% 50% 0 0;
+    top: 0;
+    right: 0;
+    transform: rotate(45deg);
+}
+
+.background-elements .heart-shape::before,
+.background-elements .heart-shape::after {
+    content: '';
+    position: absolute;
+    background-color: #FFD700;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.background-elements .heart-shape::before {
+    top: 0;
+    left: -100px;
+}
+
+.background-elements .heart-shape::after {
+    top: -100px;
+    left: 0;
+}

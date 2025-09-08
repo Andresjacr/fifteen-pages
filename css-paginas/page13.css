@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f2f5; /* Un fondo gris claro para el cuerpo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Ajusta esto según el ancho deseado */
+    height: 700px; /* Altura fija para el contenedor principal */
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.left-section,
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.left-section {
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.right-section {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.center-section {
+    flex: 1.5; /* Más ancho para la sección central */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.gradient-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #a4e5ed, #c8a3ed); /* Gradiente de la imagen */
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #333; /* Color de texto más oscuro para el contraste */
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8em;
+    line-height: 1;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 300px;
+    color: #555;
+}
+
+.explore-button {
+    background-color: #333; /* Botón oscuro */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #555;
+}
+
+.number {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.6;
+    max-width: 250px;
+}
+
+.image-wrapper {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 20px; /* Bordes redondeados para las imágenes */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para las imágenes */
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bottom-left {
+    width: 200px;
+    height: 300px;
+    bottom: 40px;
+    left: 40px;
+    background-color: #f5deb3; /* Color de fondo si la imagen no carga */
+}
+
+.top-right {
+    width: 250px;
+    height: 350px;
+    top: 40px;
+    right: 40px;
+    background-color: #add8e6; /* Color de fondo si la imagen no carga */
+}
+
+/* Formas */
+.shape {
+    position: absolute;
+}
+
+.blue-star {
+    width: 60px;
+    height: 60px;
+    background-color: #a4e5ed;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    top: 150px;
+    right: 80px;
+}
+
+.gold-star {
+    width: 70px;
+    height: 70px;
+    background-color: #f5deb3;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    bottom: 100px;
+    left: 60px;
+}
+
+.star-outline {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #555;
+    transform: rotate(45deg); /* Para que parezca un diamante */
+}
+
+.star-outline.top-center {
+    top: 80px;
+    left: 50px;
+}
+
+.star-outline.bottom-center {
+    bottom: 80px;
+    right: 50px;
+}
+
+.star-outline {
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario */
+}
+
+.gradient-bg::before { /* Para las formas semicirculares */
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: #f5deb3; /* Color de la forma inferior izquierda */
+    border-radius: 50%;
+    top: -50px;
+    left: -50px;
+    opacity: 0.6;
+    z-index: 0;
+    transform: rotate(45deg); /* Para la forma inferior izquierda */
+}
+
+.gradient-bg::after { /* Para la forma superior derecha */
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #add8e6; /* Color de la forma superior derecha */
+    border-radius: 50%;
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.6;
+    z-index: 0;
+    transform: rotate(-45deg); /* Para la forma superior derecha */
+}
+

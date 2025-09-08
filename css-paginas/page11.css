@@ -1,0 +1,128 @@
+/* Estilos Generales y Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* --- Sección Superior --- */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    min-height: 70vh;
+}
+
+.text {
+    flex: 1;
+    max-width: 500px;
+}
+
+.text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+}
+
+.text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 30px 0 40px 0;
+    color: #666;
+    max-width: 400px;
+}
+
+.text button {
+    background: #2c2c2c;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text button:hover {
+    background: #404040;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(44, 44, 44, 0.2);
+}
+
+.imgs {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding-right: 50px;
+}
+
+.imgs img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imgs img:first-child {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.imgs img:last-child {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    margin-left: -40px;
+    z-index: 1;
+}
+
+.imgs img:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Barra Inferior --- */
+.barra {
+    background: #2b2b2b;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+   .card {
+    flex: 1;
+    text-align: center;
+    color: #fff;
+  }
+   .card i {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+   .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+   .card p {
+    font-size: 16px;
+    color: #ddd;
+  }
+ 
