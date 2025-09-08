@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif; /* Usamos una fuente sans-serif como en la imagen */
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+h1{
+    font-size: 5em;
+    margin-bottom: 0%;
+    position: relative;
+    width: 30%;
+    
+}
+.content{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-end;
+    height: 70vh;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin: 0%;
+   
+}
+
+.content h1{
+    color: gray;
+    align-items: center;
+    font-size: 30px;
+    margin: 50px;
+    margin-bottom: 0%;
+ 
+}
+.colum1{
+    display: flex;
+    flex-direction: column;
+    color:rgb(88, 84, 84);
+    font-size: 20px;
+    position: relative;
+    
+}
+.colum2{
+    display: flex;
+    flex-direction: column;
+    color:rgb(88, 84, 84);
+    font-size: 20px;
+    position: relative;
+
+}
+.colum3{
+    display: flex;
+    flex-direction: column;
+    color:rgb(88, 84, 84);
+    font-size: 20px;
+    position: relative;
+
+}
+
+p{
+    width:80%  ;
+    max-height: none;
+    align-self: center;
+}
+
+img{
+    display: flex;
+    width: 80%;
+    align-self: center;
+}

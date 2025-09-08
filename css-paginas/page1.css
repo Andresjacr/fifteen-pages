@@ -15,10 +15,15 @@ section{
 }
 h1{
     font-size: 3.3vw;
+    max-width: 40%;
+    margin-bottom: 2%;
+    margin-top: 0%;
 }
 p{
+    text-align: center;
     font-size: 1vw;
     margin-top: -2vw;
+    max-width: 50%;
 }
 .images{
     display: flex;
@@ -31,7 +36,7 @@ p{
 
 .images img{
     width: 20vw;
-    height: 18vw;
+    height: auto;
 }
 
 button{

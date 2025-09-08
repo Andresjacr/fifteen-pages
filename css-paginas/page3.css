@@ -1,0 +1,42 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+    font-size:30px;
+    text-align:start ;
+
+    
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    font-size:20px;
+    text-align: left;
+    flex-wrap: wrap;
+
+}
+
+button {
+    all: unset;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    max-height:700px;
+}
